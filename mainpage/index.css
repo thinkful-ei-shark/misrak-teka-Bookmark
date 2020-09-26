@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(13, 13, 14);
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.add {
+  display: flex;
+  flex-direction: row;
+}
+
+.fill {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border: solid black 5px;
+  width: 300px;
+  padding-bottom: 20px;
+}
+.main-container {
+  justify-content: center;
+  padding-left: 100px;
+}
