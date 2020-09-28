@@ -13,16 +13,60 @@
           <h1>My Bookmark</h1>
         </section>
 
-        <section class="button">
+        <section id="hide-top-menu" class="button">
           <section class="add">
-            <button><a href="../form/form.html">&#43;Add</a></button>
+            <button id="add-btn">&#43;Add</button>
           </section>
           <section class="fill">
             <button>Filter&#9660;</button>
           </section>
         </section>
+        <section class="displayForm">
+          <form id = "fill-form"> 
+            <section class = "add-form">
+                
+                <div class = "web-name">
+                    <input type="text" class ="web-name" id ="name" placeholder="Name"/>
+                </div> 
 
-        <section class="displaybookmark"></section>
+                <div class = "web-url">
+                    
+                    <input type="text" class ="web-url" id ="url" placeholder=".eg(htttp/https)"/>
+                </div>
+
+                <div class = "web-description">
+                
+                    <input type = "text" class="web-description" id ="web-description" placeholder="Plese write a description"/>
+                </div>
+
+            </section>
+
+           
+                <section class = "rating-btn">
+                    <select name = "rating-star" id='rating' size="multiple">
+                        <option value="1">&#9733&#9734&#9734&#9734&#9734</option>
+                        <option value="2">&#9733&#9733&#9734&#9734&#9734</option>
+                        <option value="3">&#9733&#9733&#9733&#9734&#9734</option>
+                        <option value="4">&#9733&#9733&#9733&#9733&#9734</option>
+                        <option value="5">&#9733&#9733&#9733&#9733&#9733</option>
+                    </select>
+                </section>
+
+           
+            <section class = "submit-container">
+                <div class="submit-btn">
+                    <input id="submit" type="submit" />
+                </div>
+                <div class="cancel-btn">
+                <button id="test"  name='Cancel'><a href="../mainpage/index.html">Cancel</a></button>
+                </div>
+            </section>
+        </form>
+        </section>
+
+        <section class="bookmark-box">
+          
+        </section>
 
         <!-- <section class="display-bookmarks">
         <select name="bakkmarks-byname" size="multiple">

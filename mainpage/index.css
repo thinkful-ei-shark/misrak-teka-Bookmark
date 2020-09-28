@@ -15,12 +15,14 @@ a {
 .add {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 }
 
 .fill {
   display: flex;
   flex-direction: row;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 .project-container {
   display: flex;
@@ -33,4 +35,102 @@ a {
 .main-container {
   justify-content: center;
   padding-left: 100px;
+}
+/* Form  */
+.displayForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+.displayForm input {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+}
+.rating-btn {
+  display: flex;
+  padding-bottom: 10px;
+}
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cancel-btn button {
+  padding: 10px 10px;
+  border: none;
+  background-color: red;
+  outline: none;
+  border-radius: 20px;
+}
+.cancel-btn button :hover {
+  width: 25px;
+  color: yellow;
+}
+.submit-btn input :hover {
+  color: yellow;
+}
+
+.cancel-btn a {
+  color: white;
+}
+.submit-btn input {
+  padding: 10px 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+select {
+  font-size: x-large;
+  width: 100%;
+  padding: 10px 10px;
+  color: darkcyan;
+  outline: none;
+}
+/*--- Form End */
+/* ---User Bookmar Dispaly --*/
+.displaybookmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: solid darkcyan 2px;
+  color: blue;
+}
+.displayForm {
+  display: none;
+}
+/* Title Button */
+.displaybookmark button {
+  margin-top: 12px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.displaybookmark span {
+  color: blue;
+  font-size: x-large;
+}
+span.down {
+  display: none;
+}
+/* slider conatiner */
+.slider-conatiner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.slider-conatiner a {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.slider-conatiner {
+  display: none;
 }
