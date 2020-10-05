@@ -12,6 +12,11 @@ a {
   flex-direction: row;
   justify-content: space-around;
 }
+.delete {
+  color: red;
+  padding-top: 10px;
+  font-weight: 100rem;
+}
 .add {
   display: flex;
   flex-direction: row;
@@ -84,13 +89,14 @@ a {
   cursor: pointer;
   outline: none;
 }
-select {
+#rating select {
   font-size: x-large;
   width: 100%;
   padding: 10px 10px;
   color: darkcyan;
   outline: none;
 }
+
 /*--- Form End */
 /* ---User Bookmar Dispaly --*/
 .displaybookmark {
@@ -131,6 +137,22 @@ span.down {
   padding: 5px;
   border-radius: 10px;
 }
-.slider-conatiner {
+.view-box {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.view-box span {
+  border: solid green 2px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.error {
+  color: red;
+  border: solid red 3px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
   display: none;
 }
