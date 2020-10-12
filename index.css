@@ -33,7 +33,7 @@ label {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
 }
-.fill {
+.rating {
   display: flex;
   flex-direction: row;
   padding-left: 10px;
