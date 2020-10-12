@@ -89,6 +89,9 @@ label {
   outline: none;
   border-radius: 20px;
 }
+.cancel-btn {
+  margin-top: 10px;
+}
 .cancel-btn a :hover {
   width: 25px;
   color: yellow;
@@ -100,6 +103,7 @@ label {
 .cancel-btn a {
   color: yellow;
 }
+
 .submit-btn input {
   padding: 10px 10px;
   border: none;
@@ -124,6 +128,7 @@ label {
 .displayForm {
   display: none;
 }
+
 /* Title Button */
 .displaybookmark button {
   margin-top: 12px;
