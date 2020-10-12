@@ -1,6 +1,8 @@
 
-const BASEURL = "https://thinkful-list-api.herokuapp.com/misrak/bookmarks";
+//------what events happen and how to handle them-----//
 
+
+//------Add BTN------------//
 function addbookmarkbtn() {
   $("#add-btn").click((event) => {
     event.preventDefault();
@@ -10,57 +12,7 @@ function addbookmarkbtn() {
   });
 }
 
-
-function getfromData() {
-  $("form").submit((event) => {
-    console.log("clicked");
-    event.preventDefault();
-    const store = {};
-
-    let bookmarkname = $("#name").val();
-    let bookmarkurl = $("#url").val();
-    let bookmarkdesc = $("#web-description").val();
-    let bookmarkrating = parseInt($("#rating").val());
-
-    if (bookmarkname.length > 0 && bookmarkurl.length > 0 && bookmarkdesc.length > 0) {
-      store.title = bookmarkname;
-      store.url = bookmarkurl;
-      store.desc = bookmarkdesc;
-      store.rating = bookmarkrating;
-      console.log(JSON.stringify(store));
-
-      let body = JSON.stringify(store);
-      
-      fetch(`${BASEURL}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body,
-      })
-        .then((response) => {
-          $(".error").css("display", "none");
-
-            $("#name").val('');
-            $("#url").val('');
-            $("#web-description").val('');
- 
-          displayuserBookmark();
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    } else {
-      const errormsg = document.querySelector(".error");
-      $(".error").css("display", "block");
-    }
-
-  });
-}
-
-//fetch to delete with method delete and pass the id
-// fetch('url',option).then(output)
-//fetch('urladdress')
+//------Delete BTN-----------//
 
 function deletehandler(id) {
 
@@ -74,7 +26,7 @@ function deletehandler(id) {
     .then((response) => displayuserBookmark());
 }
 
-//------Fillter---------//
+//------Fillter BTN---------//
 
 function fillterHandler() {
   const selected = document.querySelector("#fillterrating");
@@ -102,22 +54,18 @@ function fillterHandler() {
   });
 }
 
-const getItemIdFromElement = function (item) {
-  return $(item).closest(".displaybookmark").data("item-id");
-};
-
-//------ slider--------//
+//------ Slider BTN--------//
 
 function slider(id) {
   fetch("https://thinkful-list-api.herokuapp.com/misrak/bookmarks/")
     .then((data) => data.json())
     .then((bookamrkList) => {
       let item = bookamrkList.filter((ite) => ite.id === id);
-      //slider desc
       let test = $(`#btn-${id}`).attr("toggled");
-      //Hide Discription
+
+      //To Hide Discription
       if (test == "false") {
-        //Hide Discription
+       
         $(`.up-btn-${id}`).css("display", "block");
         $(`.down-btn-${id}`).css("display", "none");
         $(`#btn-${id}`).attr("toggled", "true");
@@ -134,6 +82,7 @@ function slider(id) {
         $(`.slider-${id}`).css("display", "none");
 
         // this will show the information input from the DOM
+        
         const divtoggled = document.querySelector(`.view-box-${id}`);
         divtoggled.innerHTML = `<section class='view-box'>
           <div><a href=${item[0].url}  target='_blank'>Vist Site</a></div>

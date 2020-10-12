@@ -5,12 +5,16 @@ a {
   text-align: center;
   padding-top: 20px;
   color: rgb(13, 13, 14);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
 }
 
 .button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
 }
 .delete {
   color: red;
@@ -22,9 +26,12 @@ a {
   flex-direction: row;
   padding-bottom: 10px;
 }
+
 label {
   margin-right: 15px;
   font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
 }
 .fill {
   display: flex;
@@ -32,15 +39,17 @@ label {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+
 .project-container {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  border: solid black 5px;
-  width: 300px;
+  border: solid rgb(202, 202, 218) 5px;
+  width: 400px;
   height: fit-content;
+  margin-top: 100px;
   padding-bottom: 20px;
-  background-color: tan;
+  background-color: rgb(202, 202, 218);
 }
 .main-container {
   display: flex;
@@ -104,6 +113,7 @@ label {
 }
 
 /*--- Form End */
+
 /* ---User Bookmar Dispaly --*/
 .displaybookmark {
   display: flex;
@@ -129,6 +139,7 @@ label {
 span.down {
   display: none;
 }
+
 /* slider conatiner */
 .slider-conatiner {
   display: flex;
@@ -145,7 +156,6 @@ span.down {
 }
 .view-box {
   display: flex;
-
   justify-content: space-around;
 }
 
@@ -161,4 +171,6 @@ span.down {
   margin: 10px;
   text-align: center;
   display: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
 }

@@ -1,6 +1,9 @@
 "use strict";
 const userbookmark = {};
 
+const BASEURL = "https://thinkful-list-api.herokuapp.com/misrak/bookmarks";
+
+//------- How to fill the form with rating works-----//
 function generateaddedbookmark(item) {
 
   let rating;
@@ -83,13 +86,22 @@ function generateaddedbookmark(item) {
             <div class='slider-conatiner view-box-${item.id}'></div>`;
   }
 }
+
+
+//------------How to generate the form data--------------//
 const generateuserbookmark = function (bookamrkList) {
   const items = bookamrkList.map((item) => generateaddedbookmark(item));
   const final = items.join("");
   return final;
 };
 
+//-----------How to identify the data------------//
+const getItemIdFromElement = function (item) {
+  return $(item).closest(".displaybookmark").data("item-id");
+};
+
 //DOM function
+
 $(function () {
   addbookmarkbtn();
   displayuserBookmark();
