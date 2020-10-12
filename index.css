@@ -72,6 +72,11 @@ label {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#rating-for {
+  background-color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+}
 .submit-container {
   display: flex;
   flex-direction: row;
@@ -93,7 +98,7 @@ label {
 }
 
 .cancel-btn a {
-  color: white;
+  color: yellow;
 }
 .submit-btn input {
   padding: 10px 10px;
