@@ -56,20 +56,21 @@ label {
   justify-content: center;
 }
 /* Form  */
+
 .displayForm {
-  display: flex;
-  flex-direction: row;
+  display: block;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .displayForm input {
   margin-bottom: 10px;
-  padding: 10px 10px;
+  padding: 5px 10px;
 }
 .rating-btn {
-  display: flex;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .submit-container {
   display: flex;

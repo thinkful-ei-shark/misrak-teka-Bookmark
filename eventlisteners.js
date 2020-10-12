@@ -29,7 +29,7 @@ function deletehandler(id) {
 //------Fillter BTN---------//
 
 function fillterHandler() {
-  const selected = document.querySelector("#fillter-rating");
+  const selected = document.querySelector("#rating");
 
   selected.addEventListener("click", function () {
     const res = $("#rating").val();

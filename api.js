@@ -3,6 +3,7 @@
 //-------Bookmark Storage-------//
 function getfromData() {
   $("form").submit((event) => {
+    
     console.log("clicked");
     event.preventDefault();
     const store = {};
@@ -13,10 +14,12 @@ function getfromData() {
     let bookmarkrating = parseInt($("#rating").val());
 
     if (bookmarkname.length > 0 && bookmarkurl.length > 0 && bookmarkdesc.length > 0) {
+
       store.title = bookmarkname;
       store.url = bookmarkurl;
       store.desc = bookmarkdesc;
       store.rating = bookmarkrating;
+
       console.log(JSON.stringify(store));
 
       let body = JSON.stringify(store);
