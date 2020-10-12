@@ -6,21 +6,22 @@
     <title>My Bookmark</title>
     <link href="./index.css" rel="stylesheet" type="text/css" />
   </head>
-  <main>
+  
   <body>
+    <main>
     <div class="main-container">
       <div class="project-container">
-        <section class="title"><h1>My Bookmark</h1></section>
 
-        <section class='error'><p>Please provide the information needed</p></section>
+        <section class="title"><h1>My Bookmark</h1></section>
+        <section class='error'><h2>Please provide the information needed!</h2></section>
 
         <section id="hide-top-menu" class="button">
-          <section class="add">
+          <div class="add">
             <button id="add-btn">&#43;Add</button>
-          </section>
+          </div>
         
-          <section class="rating">
-            <label id='fillabel' for="rating"> Filter By rating:</label>
+          <div class="filter-rating">
+            <label id='filter-label' for="rating"> Filter By rating:</label>
             <select  name = "star" id='rating' size="multiple">  
               <option value="All">All</option>
               <option id='rating' value="1"> 1</option>
@@ -29,7 +30,7 @@
               <option id='rating' value="4">4</option>
               <option id='rating' value="5">5</option>
             </select>
-          </section>
+          </div>
         </section>
 
 
@@ -56,7 +57,7 @@
 
            
               <section class = "rating-btn">
-                <select name = "rating-star" id='rating' size="multiple">
+                <select name = "rating-star" id='rating-num' size="multiple">
                   <option value="1">&#9733&#9734&#9734&#9734&#9734</option>
                   <option value="2">&#9733&#9733&#9734&#9734&#9734</option>
                   <option value="3">&#9733&#9733&#9733&#9734&#9734</option>
@@ -81,10 +82,12 @@
       </div>
     </div>
 
+    
+    </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="./eventlisteners.js"></script>
     <script src="./api.js"></script>
     <script src="./index.js"></script>
   </body>
-  </main>
+  
 </html>
