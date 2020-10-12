@@ -22,9 +22,10 @@
             <button id="add-btn">&#43;Add</button>
           </section>
           <section class="fill">
-         
-             <select  name = "fillter-star" id='fillterrating' size="multiple">
-               <option> Fillter by rating</option> 
+         <label id='fillabel' for="fillterrating"> Filter By rating </label>
+           <select  name = "fillter-star" id='fillterrating' size="multiple">
+               
+                        <option value="All">All</option>
                         <option id='fillterrating' value="1"> 1</option>
                         <option id='fillterrating' value="2">2</option>
                         <option id='fillterrating' value="3">3</option>
@@ -48,21 +49,21 @@
 
                 <div class = "web-description">
                 
-                    <input type = "text" class="web-description" id ="web-description" placeholder="Plese write a description"/>
+                    <input type = "text" class="web-description" id ="web-description" placeholder="Please write a description"/>
                 </div>
 
             </section>
 
            
-                <section class = "rating-btn">
-                    <select name = "rating-star" id='rating' size="multiple">
-                        <option value="1">&#9733&#9734&#9734&#9734&#9734</option>
-                        <option value="2">&#9733&#9733&#9734&#9734&#9734</option>
-                        <option value="3">&#9733&#9733&#9733&#9734&#9734</option>
-                        <option value="4">&#9733&#9733&#9733&#9733&#9734</option>
-                        <option value="5">&#9733&#9733&#9733&#9733&#9733</option>
-                    </select>
-                </section>
+              <section class = "rating-btn">
+                <select name = "rating-star" id='rating' size="multiple">
+                  <option value="1">&#9733&#9734&#9734&#9734&#9734</option>
+                  <option value="2">&#9733&#9733&#9734&#9734&#9734</option>
+                  <option value="3">&#9733&#9733&#9733&#9734&#9734</option>
+                  <option value="4">&#9733&#9733&#9733&#9733&#9734</option>
+                  <option value="5">&#9733&#9733&#9733&#9733&#9733</option>
+                </select>
+              </section>
 
            
             <section class = "submit-container">
@@ -84,6 +85,9 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./eventlisteners.js"></script>
+    <script src="./api.js"></script>
     <script src="./index.js"></script>
+
   </body>
 </html>

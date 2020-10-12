@@ -22,7 +22,10 @@ a {
   flex-direction: row;
   padding-bottom: 10px;
 }
-
+label {
+  margin-right: 15px;
+  font-size: medium;
+}
 .fill {
   display: flex;
   flex-direction: row;
@@ -35,13 +38,13 @@ a {
   justify-items: center;
   border: solid black 5px;
   width: 300px;
-  height: 600px;
+  height: fit-content;
   padding-bottom: 20px;
   background-color: tan;
 }
 .main-container {
+  display: flex;
   justify-content: center;
-  padding-left: 100px;
 }
 /* Form  */
 .displayForm {
@@ -50,6 +53,7 @@ a {
   justify-content: center;
   padding-top: 30px;
 }
+
 .displayForm input {
   margin-bottom: 10px;
   padding: 10px 10px;
