@@ -1,10 +1,7 @@
-# misrak-teka-bookmarkapp
-
- https://thinkful-ei-shark.github.io/misrak-teka-bookmarkapp/
-
-I can add new bookmarks via form
-I can put a description for my bookmakers
-I i can vist the website via a link
-i can chooes to display the bookmarks discription
-I can view my bookmakers via my rating
-I can delete unwated bookmakers
+My Bookmark App
+I can add new bookmarks via form.
+I can put a description for my bookmakers.
+I can visit the website via a link.
+I can choose to display the bookmarks description or not.
+I can view my bookmakers via rating result.
+I can delete unwanted bookmakers.
