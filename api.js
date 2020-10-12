@@ -11,7 +11,7 @@ function getfromData() {
     let bookmarkname = $("#name").val();
     let bookmarkurl = $("#url").val();
     let bookmarkdesc = $("#web-description").val();
-    let bookmarkrating = parseInt($("#rating").val());
+    let bookmarkrating = parseInt($("#rating-num").val());
 
     if (bookmarkname.length > 0 && bookmarkurl.length > 0 && bookmarkdesc.length > 0) {
 

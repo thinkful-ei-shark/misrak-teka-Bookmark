@@ -33,7 +33,7 @@ label {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
 }
-.rating {
+.rating-for {
   display: flex;
   flex-direction: row;
   padding-left: 10px;
@@ -103,13 +103,6 @@ label {
   width: 100px;
   border-radius: 20px;
   cursor: pointer;
-  outline: none;
-}
-#rating select {
-  font-size: x-large;
-  width: 100%;
-  padding: 10px 10px;
-  color: darkcyan;
   outline: none;
 }
 

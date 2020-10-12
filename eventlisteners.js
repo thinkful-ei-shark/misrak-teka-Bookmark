@@ -29,10 +29,10 @@ function deletehandler(id) {
 //------Fillter BTN---------//
 
 function fillterHandler() {
-  const selected = document.querySelector("#rating");
+  const selected = document.querySelector("#rating-for");
 
   selected.addEventListener("click", function () {
-    const res = $("#rating").val();
+    const res = $("#rating-for").val();
     if (res == "1" || res == "2" || res == "3" || res == "4" || res == "5") {
       fetch("https://thinkful-list-api.herokuapp.com/misrak/bookmarks/")
         .then((data) => data.json())
