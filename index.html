@@ -6,27 +6,25 @@
     <title>My Bookmark</title>
     <link href="./index.css" rel="stylesheet" type="text/css" />
   </head>
-  
+
   <body>
     <main>
       <section class="main-container">
         <div class="project-container">
-
           <div class="title"><h1>My Bookmark</h1></div>
-          <section class='error'><h2>Please provide the information needed!</h2></section>
+          <section class="error"><h2>Please provide the information needed!</h2></section>
 
           <div id="hide-top-menu" class="button">
-
             <div class="add">
               <button id="add-btn">&#43;Add</button>
             </div>
-        
+
             <div class="filter-rating">
-              <label id='filter-label'> Filter By rating:</label>
-            
-              <select  name = "star" id='rating-for' size="1">  
+              <label id="filter-label"> Filter By rating:</label>
+
+              <select name="star" id="rating-for" size="1">
                 <option value="All">All</option>
-                <option value="1"> 1</option>
+                <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -35,59 +33,50 @@
             </div>
           </div>
 
-
           <div class="displayForm">
-
-            <form id = "fill-form"> 
-
-             <div class = "add-form">
-                <div class = "web-name">
-                  <label id = website-name>Name:</label>
-                  <input type="text" class ="web-name" id ="name" placeholder="Name"/>
-                </div> 
-                <div class = "web-url"> 
-                  <label id = link>URL:</label>
-                  <input type="text" class ="web-url" id ="url" placeholder=".eg(htttp/https)"/>
+            <form id="fill-form">
+              <div class="add-form">
+                <div class="web-name">
+                  <label id="website-name">Name:</label>
+                  <input type="text" class="web-name" id="name" placeholder="Name" />
                 </div>
-                <div class = "web-description">
-                  <label id = describe>Description:</label>
-                  <input type = "text" class="web-description" id ="web-description" placeholder="Please write a description!"/>
+                <div class="web-url">
+                  <label id="link">URL:</label>
+                  <input type="text" class="web-url" id="url" placeholder=".eg(htttp/https)" />
+                </div>
+                <div class="web-description">
+                  <label id="describe">Description:</label>
+                  <input type="text" class="web-description" id="web-description" placeholder="Please write a description!" />
                 </div>
               </div>
 
-           
-              <div class = "rating-btn">
-                <select name = "rating-star" id='rating-num' size="1">
-                  <option value="1">&#9733&#9734&#9734&#9734&#9734</option>
-                  <option value="2">&#9733&#9733&#9734&#9734&#9734</option>
-                  <option value="3">&#9733&#9733&#9733&#9734&#9734</option>
-                  <option value="4">&#9733&#9733&#9733&#9733&#9734</option>
-                  <option value="5">&#9733&#9733&#9733&#9733&#9733</option>
+              <div class="rating-btn">
+                <select name="rating-star" id="rating-num" size="1">
+                  <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                  <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                  <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                  <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                  <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
                 </select>
               </div>
-           
-              <div class = "submit-container">
+
+              <div class="submit-container">
                 <div class="submit-btn">
                   <input id="submit" type="submit" />
                 </div>
                 <div class="cancel-btn">
-                  <button id="test"  name='Cancel'>
-                    <a href="./index.html">Cancel</a>
-                  </button>
+                  <a id="test" name="Cancel" href="./index.html">Cancel</a>
                 </div>
               </div>
-
             </form>
-
           </div>
-          <div class="bookmark-box"></div>  
+          <div class="bookmark-box"></div>
         </div>
       </section>
     </main>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-      <script src="./eventlisteners.js"></script>
-      <script src="./api.js"></script>
-      <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./eventlisteners.js"></script>
+    <script src="./api.js"></script>
+    <script src="./index.js"></script>
   </body>
-  
 </html>

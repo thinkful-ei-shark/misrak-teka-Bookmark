@@ -82,14 +82,14 @@ label {
   flex-direction: row;
   justify-content: space-around;
 }
-.cancel-btn button {
+.cancel-btn a {
   padding: 10px 10px;
   border: none;
   background-color: red;
   outline: none;
   border-radius: 20px;
 }
-.cancel-btn button :hover {
+.cancel-btn a :hover {
   width: 25px;
   color: yellow;
 }
