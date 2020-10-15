@@ -7,4 +7,3 @@ I can visit the website via a link.
 I can choose to display the bookmarks description or not.
 I can view my bookmakers via rating result.
 I can delete unwanted bookmakers.
-working
