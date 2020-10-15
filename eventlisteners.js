@@ -37,7 +37,7 @@ function fillterHandler() {
       fetch("https://thinkful-list-api.herokuapp.com/misrak/bookmarks/")
         .then((data) => data.json())
         .then((data) => {
-          const result = data.filter((item) => item.rating === parseInt(res));
+          const result = data.filter((item) => item.rating >= parseInt(res));
           $(".bookmark-box").html(generateuserbookmark(result));
         });
     }
